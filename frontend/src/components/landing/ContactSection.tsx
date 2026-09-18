@@ -94,7 +94,7 @@ export const ContactSection: React.FC = () => {
                 <div>
                   <div style={{ fontSize: 12, color: 'var(--3v-text-secondary)' }}>Email Inquiries</div>
                   <div style={{ fontSize: 14, fontWeight: 600, color: 'var(--3v-text-primary)' }}>
-                    solutions@3vtechworks.com
+                    support@3vtechworks.com
                   </div>
                 </div>
               </div>
@@ -119,7 +119,7 @@ export const ContactSection: React.FC = () => {
                 <div>
                   <div style={{ fontSize: 12, color: 'var(--3v-text-secondary)' }}>Direct Enterprise Line</div>
                   <div style={{ fontSize: 14, fontWeight: 600, color: 'var(--3v-text-primary)' }}>
-                    +1 (800) 3V-TECH-WORKS
+                    +91-8431496329 / +91-63618 88927
                   </div>
                 </div>
               </div>
@@ -144,7 +144,7 @@ export const ContactSection: React.FC = () => {
                 <div>
                   <div style={{ fontSize: 12, color: 'var(--3v-text-secondary)' }}>Global Headquarters</div>
                   <div style={{ fontSize: 14, fontWeight: 600, color: 'var(--3v-text-primary)' }}>
-                    Innovation Cyberpark, Tech District
+                    Bengaluru, Karnataka, India - 560061
                   </div>
                 </div>
               </div>
