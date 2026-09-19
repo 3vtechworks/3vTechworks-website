@@ -17,7 +17,10 @@ export const connectDatabase = async () => {
     });
 
     await mongoose.connect(env.MONGO_URI, {
-      serverSelectionTimeoutMS: 5000,
+      serverSelectionTimeoutMS: 30000, // Wait up to 30s to find a server
+      bufferTimeoutMS: 30000,          // Wait up to 30s for buffered operations
+      connectTimeoutMS: 30000,         // TCP connection timeout
+      socketTimeoutMS: 60000,          // Socket inactivity timeout
     });
   } catch (error) {
     logger.error(`Failed to connect to MongoDB: ${error.message}`);
