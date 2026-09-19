@@ -12,19 +12,19 @@ interface ThemeContextType {
 }
 
 const defaultThemeState: ThemeContextType = {
-  theme: 'light',
+  theme: 'dark',
   toggleTheme: () => {},
   logo: logoBright,
-  isDark: false,
+  isDark: true,
 };
 
 const ThemeContext = createContext<ThemeContextType>(defaultThemeState);
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // Read saved theme preference or default to 'light' (white theme) as requested
+  // Read saved theme preference or default to 'dark'
   const [theme, setTheme] = useState<ThemeMode>(() => {
     const saved = typeof window !== 'undefined' ? localStorage.getItem('3v_theme') : null;
-    return saved === 'dark' || saved === 'light' ? saved : 'light';
+    return saved === 'dark' || saved === 'light' ? saved : 'dark';
   });
 
   useEffect(() => {
